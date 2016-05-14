@@ -15,8 +15,8 @@
 				canvasElement.className = "canvas-box";
 				var page = document.getElementById("page");
 // replace it to seat befor the body in the wordpress page //
-				//page.insertBefore(renderer.domElement, page.firstChild);
-        document.body.appendChild( renderer.domElement );
+				page.insertBefore(renderer.domElement, page.firstChild);
+        //document.body.appendChild( renderer.domElement );
 
 				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
 				camera.position.z = 500;
