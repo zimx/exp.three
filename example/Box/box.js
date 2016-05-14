@@ -6,12 +6,13 @@ var geometry, material, mesh;
 function setup() {
 
   var W = window.innerWidth, H = window.innerHeight;
-  var canvasElement = renderer.domElement;
-				canvasElement.className = "canvas-box";
-				var page = document.getElementById("page");
+
   renderer = new THREE.WebGLRenderer();
 
   renderer.setSize( W, H );
+  var canvasElement = renderer.domElement;
+  canvasElement.className = "canvas-box";
+  var page = document.getElementById("page");
   document.body.appendChild( renderer.domElement );
 
 
