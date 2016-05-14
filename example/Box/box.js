@@ -11,7 +11,7 @@ function setup() {
 
   renderer.setSize( W, H );
   var canvasElement = renderer.domElement;
-  canvasElement.className = "canvas-box";
+  //canvasElement.className = "canvas-box";
   var page = document.getElementById("page");
   document.body.appendChild( renderer.domElement );
 
