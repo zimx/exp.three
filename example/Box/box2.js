@@ -12,7 +12,7 @@
 
 				renderer.setSize( W, H );
 				var canvasElement = renderer.domElement;
-				//canvasElement.className = "canvas-box";
+				canvasElement.className = "canvas-box";
 				var page = document.getElementById("page");
 // replace it to seat befor the body in the wordpress page //
 				page.insertBefore(renderer.domElement, page.firstChild);
