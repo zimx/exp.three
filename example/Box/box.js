@@ -13,7 +13,7 @@ function setup() {
 
 
   camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
-  camera.position.z = 500;
+  camera.position.z =1000;
 
   scene = new THREE.Scene();
 
@@ -22,7 +22,7 @@ function setup() {
   // paste your code from the geometryGUI here
 
 
-  geometry = new THREE.CubeGeometry(200, 200, 200);
+  geometry = new THREE.CubeGeometry(300, 200, 200);
   material = new THREE.MeshBasicMaterial({shading: THREE.SmoothShading, color: 0x000000, wireframe: true, wireframeLinewidth: 8, transparent: true, opacity: 1});
   mesh = new THREE.Mesh(geometry, material);
   mesh.position.y = 100;
@@ -31,7 +31,7 @@ function setup() {
 
 
   bg = document.body.style;
-  bg.background = '#ffffff';
+  bg.background = 'pink';
 
 
 }
@@ -42,8 +42,8 @@ function draw() {
 
   // experiment with code from the snippets menu here
 
-  mesh.rotation.x = Date.now() * 0.0005;
-  mesh.rotation.y = Date.now() * 0.0002;
+  mesh.rotation.x = Date.now() * 0.0008;
+  mesh.rotation.y = Date.now() * 0.0003;
   mesh.rotation.z = Date.now() * 0.001;
 
   renderer.render( scene, camera );
