@@ -37,7 +37,7 @@
 
 
 				bg = document.body.style;
-				bg.background = "pink" ;
+				bg.background = "red" ;
 
 
 			}
